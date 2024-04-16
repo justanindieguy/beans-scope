@@ -1,4 +1,4 @@
-package com.justanindieguy;
+package com.justanindieguy.implementation;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;

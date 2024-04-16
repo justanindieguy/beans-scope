@@ -1,4 +1,4 @@
-package com.justanindieguy.beans;
+package com.justanindieguy.implementation;
 
 import org.springframework.stereotype.Component;
 

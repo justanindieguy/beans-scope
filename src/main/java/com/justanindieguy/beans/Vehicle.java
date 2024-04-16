@@ -3,6 +3,8 @@ package com.justanindieguy.beans;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.justanindieguy.services.VehicleServices;
+
 import jakarta.annotation.PostConstruct;
 
 @Component(value = "vehicleBean")

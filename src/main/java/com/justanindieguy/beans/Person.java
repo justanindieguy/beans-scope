@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 import jakarta.annotation.PostConstruct;
 
-@Component
+@Component(value = "personBean")
 public class Person {
 
   private String name;

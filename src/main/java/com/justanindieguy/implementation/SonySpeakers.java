@@ -1,4 +1,4 @@
-package com.justanindieguy.beans;
+package com.justanindieguy.implementation;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
@@ -10,8 +10,8 @@ import com.justanindieguy.interfaces.Speakers;
 public class SonySpeakers implements Speakers {
 
   @Override
-  public void makeSound() {
-    System.out.println("Playing music from Sony Speakers!");
+  public String makeSound() {
+    return "Playing music from Sony speakers!";
   }
 
 }

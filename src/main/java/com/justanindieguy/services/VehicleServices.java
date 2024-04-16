@@ -1,4 +1,4 @@
-package com.justanindieguy.beans;
+package com.justanindieguy.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -16,6 +16,16 @@ public class VehicleServices {
   public VehicleServices(Speakers speakers, Tyres tyres) {
     this.speakers = speakers;
     this.tyres = tyres;
+  }
+
+  public void playMusic() {
+    String music = speakers.makeSound();
+    System.out.println(music);
+  }
+
+  public void moveVehicle() {
+    String status = tyres.rotate();
+    System.out.println(status);
   }
 
   public Speakers getSpeakers() {

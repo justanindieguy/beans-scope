@@ -1,4 +1,4 @@
-package com.justanindieguy;
+package com.justanindieguy.implementation;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
@@ -10,8 +10,8 @@ import com.justanindieguy.interfaces.Tyres;
 public class MichelinTyres implements Tyres {
 
   @Override
-  public void rotate() {
-    System.out.println("Rotating Michelin Tyres!");
+  public String rotate() {
+    return "Rotating Michelin tyres!";
   }
 
 }

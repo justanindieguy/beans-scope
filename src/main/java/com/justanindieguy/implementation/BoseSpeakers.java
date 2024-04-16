@@ -1,4 +1,4 @@
-package com.justanindieguy.beans;
+package com.justanindieguy.implementation;
 
 import org.springframework.stereotype.Component;
 
@@ -8,8 +8,8 @@ import com.justanindieguy.interfaces.Speakers;
 public class BoseSpeakers implements Speakers {
 
   @Override
-  public void makeSound() {
-    System.out.println("Playing music from Bose Speakers!");
+  public String makeSound() {
+    return "Playing music from Bose Speakers!";
   }
 
 }

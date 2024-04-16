@@ -3,9 +3,11 @@ package com.justanindieguy.beans;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.justanindieguy.services.VehicleServices;
+
 import jakarta.annotation.PostConstruct;
 
-@Component
+@Component(value = "vehicleBean")
 public class Vehicle {
 
   private String name;

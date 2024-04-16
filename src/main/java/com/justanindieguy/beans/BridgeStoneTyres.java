@@ -8,8 +8,8 @@ import com.justanindieguy.interfaces.Tyres;
 public class BridgeStoneTyres implements Tyres {
 
   @Override
-  public void rotate() {
-    System.out.println("Rotating BridgeStone Tyres!");
+  public String rotate() {
+    return "Rotating BridgeStone tyres!";
   }
 
 }

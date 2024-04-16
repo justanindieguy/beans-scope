@@ -8,8 +8,8 @@ import com.justanindieguy.interfaces.Speakers;
 public class BoseSpeakers implements Speakers {
 
   @Override
-  public void makeSound() {
-    System.out.println("Playing music from Bose Speakers!");
+  public String makeSound() {
+    return "Playing music from Bose Speakers!";
   }
 
 }

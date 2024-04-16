@@ -1,4 +1,4 @@
-package com.justanindieguy.beans;
+package com.justanindieguy.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

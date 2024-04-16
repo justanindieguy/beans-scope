@@ -18,6 +18,16 @@ public class VehicleServices {
     this.tyres = tyres;
   }
 
+  public void playMusic() {
+    String music = speakers.makeSound();
+    System.out.println(music);
+  }
+
+  public void moveVehicle() {
+    String status = tyres.rotate();
+    System.out.println(status);
+  }
+
   public Speakers getSpeakers() {
     return speakers;
   }

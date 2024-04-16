@@ -4,6 +4,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.justanindieguy.beans.Person;
 import com.justanindieguy.beans.Vehicle;
+import com.justanindieguy.beans.VehicleServices;
 import com.justanindieguy.config.ProjectConfig;
 
 public class Main {
@@ -11,10 +12,12 @@ public class Main {
   public static void main(String[] args) {
     var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
     Person person = context.getBean(Person.class);
-    Vehicle vehicle = context.getBean(Vehicle.class);
     System.out.println("Person bean from Context: " + person);
-    System.out.println("Vehicle bean from Context: " + vehicle);
-    System.out.println("Vehicle that person owns: " + person.getVehicle());
+
+    Vehicle vehicle = person.getVehicle();
+    VehicleServices vehicleServices = vehicle.getVehicleServices();
+    vehicleServices.getSpeakers().makeSound();
+    vehicleServices.getTyres().rotate();
   }
 
 }

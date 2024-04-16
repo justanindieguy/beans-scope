@@ -1,5 +1,5 @@
 package com.justanindieguy.interfaces;
 
 public interface Speakers {
-  public void makeSound();
+  public String makeSound();
 }

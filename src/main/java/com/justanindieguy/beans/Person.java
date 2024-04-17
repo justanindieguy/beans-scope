@@ -13,6 +13,7 @@ public class Person {
 
   @Autowired
   public Person(Vehicle vehicle) {
+    System.out.println("Person Bean created by Spring!");
     this.vehicle = vehicle;
   }
 

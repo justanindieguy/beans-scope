@@ -1,11 +1,13 @@
 package com.justanindieguy.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 import jakarta.annotation.PostConstruct;
 
 @Component(value = "personBean")
+@Lazy
 public class Person {
 
   private String name;

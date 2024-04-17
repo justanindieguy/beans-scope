@@ -1,12 +1,15 @@
 package com.justanindieguy.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.justanindieguy.interfaces.Speakers;
 import com.justanindieguy.interfaces.Tyres;
 
 @Component
+@Scope(BeanDefinition.SCOPE_PROTOTYPE)
 public class VehicleServices {
 
   private final Speakers speakers;
@@ -14,6 +17,7 @@ public class VehicleServices {
 
   @Autowired
   public VehicleServices(Speakers speakers, Tyres tyres) {
+    System.out.println("VehicleServices Bean created!");
     this.speakers = speakers;
     this.tyres = tyres;
   }

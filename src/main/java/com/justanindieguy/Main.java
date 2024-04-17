@@ -10,7 +10,7 @@ public class Main {
   public static void main(String[] args) {
     var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
     System.out.println("Before retrieving the Person Bean from the Spring Context");
-    Person person = context.getBean(Person.class); // <- Person Bean is created before trying to access it.
+    Person person = context.getBean(Person.class); // <- Person Bean is created when trying to access it.
     System.out.println("After retrieving the Person Bean from the Spring Context");
   }
 
